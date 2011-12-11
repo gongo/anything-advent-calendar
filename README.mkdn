@@ -1,0 +1,52 @@
+# anything-advent-calendar
+
+advent-calendar source for emacs anything.
+
+## Overview
+
+Inspired by [mattn/unite-advent_calendar](https://github.com/mattn/unite-advent_calendar)
+
+![Advent Calendar 一覧](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-B8B71.png)
+
+![Advent Calendar 絞り込み](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-F1A26.png)
+
+## Requirement
+
+- [Advent Calendar 2011 (jp) 開催予定リスト - Life like a clown](http://d.hatena.ne.jp/tt_clown/20111110/advent_calendar_2011_jp) の HTML 構造
+- [anything.el](http://www.emacswiki.org/emacs/Anything)
+
+## Usage
+
+`M-x adcal:anything` を実行すると、日本で開催されている Advent Calendar 一覧を表示します。
+
+### キャッシュ
+
+`M-x adcal:anything` の初回起動時、取得したカレンダー一覧はキャッシュされ、Emacs 終了時まで生きます。
+
+Advent Calendar リストのページが更新されたときや、なんとなく再取得したい場合は
+`M-x adcal:anything-refresh` を行うと、一覧を取得し、キャッシュを再構築します。
+
+### カレンダーの詳細表示
+`M-x adcal:anything` のアクションは、選択したイベントのページを開くことと、
+そのイベントの日毎の記事一覧を表示するのがあります。
+
+`M-x adcal:anything` 中に TAB を押して `View calendar` を選択すると
+
+![Advent Calendar 詳細](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-FE951.png)
+
+こんな感じ。
+
+この機能には現在以下の制限があります、
+
+1. atnd.org の記載されているカレンダーのみ `View calendar` が可能です。
+   それ以外のページだと、Message バッファに「それは無理です」的な注意がされます
+2. `View calendar` で表示される記事は、atnd.org のコメント欄に
+   a タグか、もしくは http/https が載っているものだけ抽出します。
+   イベントに関係ないコメントや、関係があってもリンクがちゃんとかかれてないものは
+   一覧表示されないため、その場合は atnd.org のページに直接赴いてください。
+
+
+
+## LICENSE
+
+This project is licensed under the MAHALO License. See LICENSE for details.

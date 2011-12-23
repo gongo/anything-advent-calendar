@@ -200,6 +200,7 @@ Example:
       ("Open calendar on browser"  . (lambda (x) (browse-url x)))
       ("View calendar" . (lambda (x) (adcal:view-calendar x)))
       )
+     (migemo)
      )))
 
 

@@ -6,9 +6,7 @@ advent-calendar source for emacs anything.
 
 Inspired by [mattn/unite-advent_calendar](https://github.com/mattn/unite-advent_calendar)
 
-![Advent Calendar 一覧](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-B8B71.png)
-
-![Advent Calendar 絞り込み](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-F1A26.png)
+![Advent Calendar 一覧](http://img.f.hatena.ne.jp/images/fotolife/g/gongoZ/20111212/20111212001032.jpg)
 
 ## Requirement
 
@@ -32,7 +30,7 @@ Advent Calendar リストのページが更新されたときや、なんとな�
 
 `M-x adcal:anything` 中に TAB を押して `View calendar` を選択すると
 
-![Advent Calendar 詳細](https://cacoo.com/diagrams/OqEoMKi0jazsMS9H-FE951.png)
+![Advent Calendar 詳細](http://img.f.hatena.ne.jp/images/fotolife/g/gongoZ/20111212/20111212001033.jpg)
 
 こんな感じ。
 
